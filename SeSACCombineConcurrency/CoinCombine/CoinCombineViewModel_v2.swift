@@ -33,18 +33,29 @@ extension CoinCombineViewModel_v2 {
         var market: Markets = []
     }
     
+    enum Action {
+        case viewOnAppear
+    }
+    
+    func action(_ action: Action) {
+        switch action {
+        case .viewOnAppear:
+            input.viewOnApper.send(())
+        }
+    }
+    
     func transform() {
         input.viewOnApper
             .sink { [weak self] _ in
                 guard let self else { return }
                 Task {
-                    try? await self.fetchMarket()
+                    await self.fetchMarket()
                 }
             }
             .store(in: &cancellables)
     }
     
-    func fetchMarket() async throws {
+    func fetchMarket() async {
         do {
             output.market = try await requestUpbitAPI()
         } catch {

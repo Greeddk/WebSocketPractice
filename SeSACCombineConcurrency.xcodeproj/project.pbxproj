@@ -26,6 +26,8 @@
 		4277CA472BEC92CF00384718 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277CA462BEC92CF00384718 /* Network.swift */; };
 		4277CA4A2BEC9BF400384718 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277CA492BEC9BF300384718 /* WebSocketManager.swift */; };
 		4277CA4C2BECA2C300384718 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277CA4B2BECA2C300384718 /* ChartView.swift */; };
+		42B4BB482BEDB3F80024A837 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB472BEDB3F80024A837 /* ChartViewModel.swift */; };
+		42B4BB4A2BEDB76F0024A837 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB492BEDB76F0024A837 /* OrderBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		4277CA462BEC92CF00384718 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		4277CA492BEC9BF300384718 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		4277CA4B2BECA2C300384718 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		42B4BB472BEDB3F80024A837 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		42B4BB492BEDB76F0024A837 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +195,8 @@
 			children = (
 				4277CA492BEC9BF300384718 /* WebSocketManager.swift */,
 				4277CA4B2BECA2C300384718 /* ChartView.swift */,
+				42B4BB472BEDB3F80024A837 /* ChartViewModel.swift */,
+				42B4BB492BEDB76F0024A837 /* OrderBook.swift */,
 			);
 			path = Socket;
 			sourceTree = "<group>";
@@ -325,6 +331,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B4BB482BEDB3F80024A837 /* ChartViewModel.swift in Sources */,
+				42B4BB4A2BEDB76F0024A837 /* OrderBook.swift in Sources */,
 				4277CA3A2BEC6B9700384718 /* CoinUpgradeView.swift in Sources */,
 				4277CA412BEC8A8B00384718 /* CoinCombineView.swift in Sources */,
 				4277CA472BEC92CF00384718 /* Network.swift in Sources */,

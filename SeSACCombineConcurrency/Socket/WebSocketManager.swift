@@ -15,6 +15,10 @@ final class WebSocketManager: NSObject { //URLSessionWebSocketDelegate를 타고
     private var websocket: URLSessionWebSocketTask?
     private var isOpen = false
     
+    var orderbookSbj = PassthroughSubject<OrderBook, Never>()
+    
+    var timer: Timer?
+    
     func openWebSocket() {
         if let url = URL(string: "wss://api.upbit.com/websocket/v1") {
             
@@ -22,12 +26,17 @@ final class WebSocketManager: NSObject { //URLSessionWebSocketDelegate를 타고
             
             websocket = session.webSocketTask(with: url)
             websocket?.resume()
+            
+            ping()
         }
     }
     
     func closeWebSocket() {
         websocket?.cancel(with: .goingAway, reason: nil)
         websocket = nil
+        
+        timer?.invalidate()
+        timer = nil
         
         isOpen = false
     }
@@ -64,11 +73,38 @@ extension WebSocketManager {
             websocket?.receive(completionHandler: { result in
                 switch result {
                 case .success(let success):
-                    print("--------------", success)
+                    
+                    switch success {
+                    case .data(let data):
+                        
+                        if let decodedData = try? JSONDecoder().decode(OrderBook.self, from: data) {
+                            dump(decodedData)
+                            
+                            self.orderbookSbj.send(decodedData)
+                        }
+                        
+                    case .string(let string): print(string)
+                    @unknown default:
+                        print("Unknown Default")
+                    }
+                    
                 case .failure(let failure):
                     print(failure)
                 }
                 self.receiveSocketData()
+            })
+        }
+    }
+    
+    // 서버에 의해 연결이 끊어지지 않도록 주기적으로 ping을 서버에 보내주는 작업도 추가
+    func ping() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] _ in
+            self?.websocket?.sendPing(pongReceiveHandler: { error in
+                if let error = error {
+                    print("ping pong error", error.localizedDescription)
+                } else {
+                    print("ping ping ping")
+                }
             })
         }
     }
