@@ -28,6 +28,21 @@
 		4277CA4C2BECA2C300384718 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4277CA4B2BECA2C300384718 /* ChartView.swift */; };
 		42B4BB482BEDB3F80024A837 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB472BEDB3F80024A837 /* ChartViewModel.swift */; };
 		42B4BB4A2BEDB76F0024A837 /* OrderBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB492BEDB76F0024A837 /* OrderBook.swift */; };
+		42B4BB592BF1A3D40024A837 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4BB582BF1A3D40024A837 /* WidgetKit.framework */; };
+		42B4BB5B2BF1A3D40024A837 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4BB5A2BF1A3D40024A837 /* SwiftUI.framework */; };
+		42B4BB5E2BF1A3D40024A837 /* GreedStaticWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB5D2BF1A3D40024A837 /* GreedStaticWidgetBundle.swift */; };
+		42B4BB602BF1A3D40024A837 /* GreedStaticWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB5F2BF1A3D40024A837 /* GreedStaticWidget.swift */; };
+		42B4BB622BF1A3D60024A837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B4BB612BF1A3D60024A837 /* Assets.xcassets */; };
+		42B4BB662BF1A3D60024A837 /* GreedStaticWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 42B4BB562BF1A3D40024A837 /* GreedStaticWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42B4BB702BF1A3ED0024A837 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4BB582BF1A3D40024A837 /* WidgetKit.framework */; };
+		42B4BB712BF1A3ED0024A837 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B4BB5A2BF1A3D40024A837 /* SwiftUI.framework */; };
+		42B4BB742BF1A3ED0024A837 /* GreedIntentWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB732BF1A3ED0024A837 /* GreedIntentWidgetBundle.swift */; };
+		42B4BB762BF1A3ED0024A837 /* GreedIntentWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB752BF1A3ED0024A837 /* GreedIntentWidget.swift */; };
+		42B4BB782BF1A3ED0024A837 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB772BF1A3ED0024A837 /* AppIntent.swift */; };
+		42B4BB7A2BF1A3EE0024A837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42B4BB792BF1A3EE0024A837 /* Assets.xcassets */; };
+		42B4BB7E2BF1A3EE0024A837 /* GreedIntentWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 42B4BB6F2BF1A3ED0024A837 /* GreedIntentWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		42B4BB852BF1B31B0024A837 /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB842BF1B31B0024A837 /* UserDefaultsGroup.swift */; };
+		42B4BB862BF1B6AC0024A837 /* UserDefaultsGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4BB842BF1B31B0024A837 /* UserDefaultsGroup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +60,36 @@
 			remoteGlobalIDString = 4277CA032BEC5A7400384718;
 			remoteInfo = SeSACCombineConcurrency;
 		};
+		42B4BB642BF1A3D60024A837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4277C9FC2BEC5A7400384718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B4BB552BF1A3D40024A837;
+			remoteInfo = GreedStaticWidgetExtension;
+		};
+		42B4BB7C2BF1A3EE0024A837 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4277C9FC2BEC5A7400384718 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42B4BB6E2BF1A3ED0024A837;
+			remoteInfo = GreedIntentWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		42B4BB672BF1A3D60024A837 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				42B4BB7E2BF1A3EE0024A837 /* GreedIntentWidgetExtension.appex in Embed Foundation Extensions */,
+				42B4BB662BF1A3D60024A837 /* GreedStaticWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4277CA042BEC5A7400384718 /* SeSACCombineConcurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSACCombineConcurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +116,22 @@
 		4277CA4B2BECA2C300384718 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		42B4BB472BEDB3F80024A837 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		42B4BB492BEDB76F0024A837 /* OrderBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBook.swift; sourceTree = "<group>"; };
+		42B4BB562BF1A3D40024A837 /* GreedStaticWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GreedStaticWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B4BB582BF1A3D40024A837 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		42B4BB5A2BF1A3D40024A837 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		42B4BB5D2BF1A3D40024A837 /* GreedStaticWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedStaticWidgetBundle.swift; sourceTree = "<group>"; };
+		42B4BB5F2BF1A3D40024A837 /* GreedStaticWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedStaticWidget.swift; sourceTree = "<group>"; };
+		42B4BB612BF1A3D60024A837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42B4BB632BF1A3D60024A837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B4BB6F2BF1A3ED0024A837 /* GreedIntentWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GreedIntentWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		42B4BB732BF1A3ED0024A837 /* GreedIntentWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedIntentWidgetBundle.swift; sourceTree = "<group>"; };
+		42B4BB752BF1A3ED0024A837 /* GreedIntentWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreedIntentWidget.swift; sourceTree = "<group>"; };
+		42B4BB772BF1A3ED0024A837 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		42B4BB792BF1A3EE0024A837 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42B4BB7B2BF1A3EE0024A837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B4BB822BF1B1C20024A837 /* SeSACCombineConcurrency.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SeSACCombineConcurrency.entitlements; sourceTree = "<group>"; };
+		42B4BB832BF1B29C0024A837 /* GreedStaticWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GreedStaticWidgetExtension.entitlements; sourceTree = "<group>"; };
+		42B4BB842BF1B31B0024A837 /* UserDefaultsGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsGroup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,15 +156,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42B4BB532BF1A3D40024A837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB5B2BF1A3D40024A837 /* SwiftUI.framework in Frameworks */,
+				42B4BB592BF1A3D40024A837 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B4BB6C2BF1A3ED0024A837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB712BF1A3ED0024A837 /* SwiftUI.framework in Frameworks */,
+				42B4BB702BF1A3ED0024A837 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		4277C9FB2BEC5A7400384718 = {
 			isa = PBXGroup;
 			children = (
+				42B4BB832BF1B29C0024A837 /* GreedStaticWidgetExtension.entitlements */,
 				4277CA062BEC5A7400384718 /* SeSACCombineConcurrency */,
 				4277CA172BEC5A7600384718 /* SeSACCombineConcurrencyTests */,
 				4277CA212BEC5A7600384718 /* SeSACCombineConcurrencyUITests */,
+				42B4BB5C2BF1A3D40024A837 /* GreedStaticWidget */,
+				42B4BB722BF1A3ED0024A837 /* GreedIntentWidget */,
+				42B4BB572BF1A3D40024A837 /* Frameworks */,
 				4277CA052BEC5A7400384718 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -115,6 +197,8 @@
 				4277CA042BEC5A7400384718 /* SeSACCombineConcurrency.app */,
 				4277CA142BEC5A7600384718 /* SeSACCombineConcurrencyTests.xctest */,
 				4277CA1E2BEC5A7600384718 /* SeSACCombineConcurrencyUITests.xctest */,
+				42B4BB562BF1A3D40024A837 /* GreedStaticWidgetExtension.appex */,
+				42B4BB6F2BF1A3ED0024A837 /* GreedIntentWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +206,7 @@
 		4277CA062BEC5A7400384718 /* SeSACCombineConcurrency */ = {
 			isa = PBXGroup;
 			children = (
+				42B4BB822BF1B1C20024A837 /* SeSACCombineConcurrency.entitlements */,
 				4277CA482BEC9BA100384718 /* Socket */,
 				4277CA3D2BEC703B00384718 /* CoinCombine */,
 				4277CA382BEC6B8100384718 /* CoinViewModel */,
@@ -201,6 +286,39 @@
 			path = Socket;
 			sourceTree = "<group>";
 		};
+		42B4BB572BF1A3D40024A837 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42B4BB582BF1A3D40024A837 /* WidgetKit.framework */,
+				42B4BB5A2BF1A3D40024A837 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42B4BB5C2BF1A3D40024A837 /* GreedStaticWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42B4BB5D2BF1A3D40024A837 /* GreedStaticWidgetBundle.swift */,
+				42B4BB5F2BF1A3D40024A837 /* GreedStaticWidget.swift */,
+				42B4BB612BF1A3D60024A837 /* Assets.xcassets */,
+				42B4BB632BF1A3D60024A837 /* Info.plist */,
+				42B4BB842BF1B31B0024A837 /* UserDefaultsGroup.swift */,
+			);
+			path = GreedStaticWidget;
+			sourceTree = "<group>";
+		};
+		42B4BB722BF1A3ED0024A837 /* GreedIntentWidget */ = {
+			isa = PBXGroup;
+			children = (
+				42B4BB732BF1A3ED0024A837 /* GreedIntentWidgetBundle.swift */,
+				42B4BB752BF1A3ED0024A837 /* GreedIntentWidget.swift */,
+				42B4BB772BF1A3ED0024A837 /* AppIntent.swift */,
+				42B4BB792BF1A3EE0024A837 /* Assets.xcassets */,
+				42B4BB7B2BF1A3EE0024A837 /* Info.plist */,
+			);
+			path = GreedIntentWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,10 +329,13 @@
 				4277CA002BEC5A7400384718 /* Sources */,
 				4277CA012BEC5A7400384718 /* Frameworks */,
 				4277CA022BEC5A7400384718 /* Resources */,
+				42B4BB672BF1A3D60024A837 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				42B4BB652BF1A3D60024A837 /* PBXTargetDependency */,
+				42B4BB7D2BF1A3EE0024A837 /* PBXTargetDependency */,
 			);
 			name = SeSACCombineConcurrency;
 			productName = SeSACCombineConcurrency;
@@ -257,6 +378,40 @@
 			productReference = 4277CA1E2BEC5A7600384718 /* SeSACCombineConcurrencyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		42B4BB552BF1A3D40024A837 /* GreedStaticWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B4BB6A2BF1A3D60024A837 /* Build configuration list for PBXNativeTarget "GreedStaticWidgetExtension" */;
+			buildPhases = (
+				42B4BB522BF1A3D40024A837 /* Sources */,
+				42B4BB532BF1A3D40024A837 /* Frameworks */,
+				42B4BB542BF1A3D40024A837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreedStaticWidgetExtension;
+			productName = GreedStaticWidgetExtension;
+			productReference = 42B4BB562BF1A3D40024A837 /* GreedStaticWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		42B4BB6E2BF1A3ED0024A837 /* GreedIntentWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42B4BB7F2BF1A3EE0024A837 /* Build configuration list for PBXNativeTarget "GreedIntentWidgetExtension" */;
+			buildPhases = (
+				42B4BB6B2BF1A3ED0024A837 /* Sources */,
+				42B4BB6C2BF1A3ED0024A837 /* Frameworks */,
+				42B4BB6D2BF1A3ED0024A837 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreedIntentWidgetExtension;
+			productName = GreedIntentWidgetExtension;
+			productReference = 42B4BB6F2BF1A3ED0024A837 /* GreedIntentWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,6 +433,12 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 4277CA032BEC5A7400384718;
 					};
+					42B4BB552BF1A3D40024A837 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					42B4BB6E2BF1A3ED0024A837 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 				};
 			};
 			buildConfigurationList = 4277C9FF2BEC5A7400384718 /* Build configuration list for PBXProject "SeSACCombineConcurrency" */;
@@ -296,6 +457,8 @@
 				4277CA032BEC5A7400384718 /* SeSACCombineConcurrency */,
 				4277CA132BEC5A7600384718 /* SeSACCombineConcurrencyTests */,
 				4277CA1D2BEC5A7600384718 /* SeSACCombineConcurrencyUITests */,
+				42B4BB552BF1A3D40024A837 /* GreedStaticWidgetExtension */,
+				42B4BB6E2BF1A3ED0024A837 /* GreedIntentWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -324,6 +487,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42B4BB542BF1A3D40024A837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB622BF1A3D60024A837 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B4BB6D2BF1A3ED0024A837 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB7A2BF1A3EE0024A837 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -346,6 +525,7 @@
 				4277CA4A2BEC9BF400384718 /* WebSocketManager.swift in Sources */,
 				4277CA372BEC5F6000384718 /* Market.swift in Sources */,
 				4277CA432BEC906F00384718 /* ViewModelType.swift in Sources */,
+				42B4BB852BF1B31B0024A837 /* UserDefaultsGroup.swift in Sources */,
 				4277CA3F2BEC709B00384718 /* CoinCombineViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +547,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		42B4BB522BF1A3D40024A837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB5E2BF1A3D40024A837 /* GreedStaticWidgetBundle.swift in Sources */,
+				42B4BB862BF1B6AC0024A837 /* UserDefaultsGroup.swift in Sources */,
+				42B4BB602BF1A3D40024A837 /* GreedStaticWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42B4BB6B2BF1A3ED0024A837 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B4BB742BF1A3ED0024A837 /* GreedIntentWidgetBundle.swift in Sources */,
+				42B4BB762BF1A3ED0024A837 /* GreedIntentWidget.swift in Sources */,
+				42B4BB782BF1A3ED0024A837 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -379,6 +579,16 @@
 			isa = PBXTargetDependency;
 			target = 4277CA032BEC5A7400384718 /* SeSACCombineConcurrency */;
 			targetProxy = 4277CA1F2BEC5A7600384718 /* PBXContainerItemProxy */;
+		};
+		42B4BB652BF1A3D60024A837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B4BB552BF1A3D40024A837 /* GreedStaticWidgetExtension */;
+			targetProxy = 42B4BB642BF1A3D60024A837 /* PBXContainerItemProxy */;
+		};
+		42B4BB7D2BF1A3EE0024A837 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42B4BB6E2BF1A3ED0024A837 /* GreedIntentWidgetExtension */;
+			targetProxy = 42B4BB7C2BF1A3EE0024A837 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -505,8 +715,10 @@
 		4277CA292BEC5A7600384718 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SeSACCombineConcurrency/SeSACCombineConcurrency.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SeSACCombineConcurrency/Preview Content\"";
@@ -534,8 +746,10 @@
 		4277CA2A2BEC5A7600384718 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SeSACCombineConcurrency/SeSACCombineConcurrency.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SeSACCombineConcurrency/Preview Content\"";
@@ -636,6 +850,116 @@
 			};
 			name = Release;
 		};
+		42B4BB682BF1A3D60024A837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GreedStaticWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR74YJR7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreedStaticWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GreedStaticWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greed.SeSACCombineConcurrency.GreedStaticWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42B4BB692BF1A3D60024A837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GreedStaticWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR74YJR7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreedStaticWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GreedStaticWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greed.SeSACCombineConcurrency.GreedStaticWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		42B4BB802BF1A3EE0024A837 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR74YJR7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreedIntentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GreedIntentWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greed.SeSACCombineConcurrency.GreedIntentWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42B4BB812BF1A3EE0024A837 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HR74YJR7W4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GreedIntentWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GreedIntentWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greed.SeSACCombineConcurrency.GreedIntentWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -671,6 +995,24 @@
 			buildConfigurations = (
 				4277CA2F2BEC5A7600384718 /* Debug */,
 				4277CA302BEC5A7600384718 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B4BB6A2BF1A3D60024A837 /* Build configuration list for PBXNativeTarget "GreedStaticWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B4BB682BF1A3D60024A837 /* Debug */,
+				42B4BB692BF1A3D60024A837 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42B4BB7F2BF1A3EE0024A837 /* Build configuration list for PBXNativeTarget "GreedIntentWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42B4BB802BF1A3EE0024A837 /* Debug */,
+				42B4BB812BF1A3EE0024A837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
